@@ -25,7 +25,7 @@ Create a PHP 5.3 application. Rename `realtimeapp` to something else if you like
 
 ## Run your Pusher application 
 
-* Visit https://myapp-<yournamespace>.rhcloud.com
+* Visit `https://myapp-<yournamespace>.rhcloud.com`
 * Click on the `Trigger Hello World` button. This will result in a message being triggered and being broadcast to everybody viewing the page.
 
 ## Where next?
