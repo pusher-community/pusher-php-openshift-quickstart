@@ -34,9 +34,9 @@ require_once( 'config.php' );
     <li>Replace the values in <code>php/config.php</code> with the credentials</li>
     <li>Deploy your Pusher application
       <pre>
-        git add .
-        git commit -m "my first commmit"
-        git push origin master
+    git add .
+    git commit -m "my first commmit"
+    git push origin master
       </pre>
     </li>
   </ul>
@@ -47,6 +47,9 @@ require_once( 'config.php' );
   <div class="action">
     <button id="trigger">Trigger Hello World</button>
   </div>
+
+  <pre id="debug">
+  </pre>
 
   <p>For more information check out the <a href="https://github.com/pusher/pusher-php-openshift-quickstart">Pusher on OpenShift README</a>.</p>
   
@@ -59,6 +62,7 @@ require_once( 'config.php' );
       if( window.console && window.console.log ) {
         window.console.log( msg );
       }
+      $( '#debug' ).prepend( "  " + msg + "\n" );
     };
 
     // Create new Pusher instance and connect
